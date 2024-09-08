@@ -1,13 +1,7 @@
 import os
 import shutil
 
-#  The script should execute in the destination directory of the converted images to .png.
-#  The script will delete all the .png files in the destination directory.
-
-# folder_courant est le folder de destination
 folder_current = os.getcwd()
-
-# The folder_src is the folder where the images are stored. It is the folder where the images are stored before being converted to .png.
 folder_src = os.path.expandvars("%localappdata%\\Packages\\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets")
 
 
@@ -30,7 +24,7 @@ effacer_png(folder_current)
 
 copy_paste_add_extension(folder_src, folder_current)
 def display_ascii():
-    tete_de_mort = """
+    logo = """
 
    ▄▄ ▄███▄
 ▄▀▀▀▀ ▄▄▄ ▀▀▀▀▄
@@ -38,7 +32,7 @@ def display_ascii():
 █▒▒▒▒▀▄▄▄▀▒▒▒▒█
 ▀▄▄▄▄▄▄▄▄▄▄▄▄▄▀
     """
-    print(tete_de_mort)
+    print(logo)
 
 display_ascii()
 
